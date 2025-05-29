@@ -154,8 +154,24 @@ body {
 }
 
 
+#filterContainer {
+    position: relative;
+    width: 100%;
+}
+
+#menuToggle {
+    display: none;
+    background-color: #6f3512;
+    color: rgb(201, 248, 225);
+    font-size: 1rem;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
 #filterButtons {
-    
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -164,8 +180,8 @@ body {
     padding: 8px 0;
     max-width: 100%;
     box-sizing: border-box;
+    transition: max-height 0.3s ease-in-out;
 }
-
 
 #filterButtons button {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -181,16 +197,33 @@ body {
     transition: background-color 0.3s;
 }
 
-#filterButtons button:hover {
-    background-color: #ddd;
-}
-
-
 #filterButtons button:hover,
 #filterButtons button:focus {
     background: #2196f3;
     color: white;
     outline: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    #menuToggle {
+        display: inline-block;
+    }
+
+    #filterButtons {
+        display: none;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    #filterButtons.show {
+        display: flex;
+    }
+
+    #filterButtons button {
+        width: 100%;
+        text-align: left;
+    }
 }
 
 #gallery {

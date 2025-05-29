@@ -209,3 +209,10 @@ loadFromStorage()
 updateCategoryOptions()
 updateFilterButtons()
 renderGallery('All')
+
+const menuToggle = document.getElementById('menuToggle');
+
+menuToggle.addEventListener('click', () => {
+  filterButtons.classList.toggle('show');
+});
+
