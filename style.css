@@ -32,8 +32,28 @@ body {
         0 0 10px #FFD70077;
     letter-spacing: 0.05em;
     overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
 }
 
+
+@media (max-width: 1024px) {
+    .page-head {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-head {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-head {
+        font-size: 1.8rem;
+    }
+}
 
 #uploadForm {
     width: 100%;
@@ -204,7 +224,6 @@ body {
     outline: none;
 }
 
-/* Responsive behavior */
 @media (max-width: 768px) {
     #menuToggle {
         display: inline-block;
@@ -288,14 +307,14 @@ body {
     background-color: #d90000;
 }
 
-/* 📱 Responsive tweaks for small screens */
+
 @media (max-width: 600px) {
     #gallery {
         gap: 10px;
     }
 
     .image-item img {
-        height: 120px; /* smaller image height */
+        height: 120px; 
     }
 
     .image-item p {
