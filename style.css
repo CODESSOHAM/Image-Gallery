@@ -261,6 +261,7 @@ body {
 
 .image-item {
     position: relative;
+    height: 120px;
     width: 100%;
     border-radius: 12px;
     overflow: hidden;
