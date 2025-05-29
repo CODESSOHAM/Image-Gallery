@@ -296,15 +296,15 @@ body {
     }
 
     .image-item img {
-        height: 140px;
+        height: 70px;
     }
 
     .image-item p {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     .delete-btn {
-        font-size: 12px;
+        font-size: 6px;
         padding: 4px 7px;
     }
 }
